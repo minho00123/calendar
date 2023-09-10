@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar</title>
+  <!-- Reset CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/less/reset.less">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="info-wrapper">
+      <section class="date">
+        <p class="month-day__date">3월 1일</p><p class="day__date">토</p>
+      </section>
+      <section class="time">
+        <p class="hour">9</p><span class="blink">:</span><p class="minutes">13</p>
+        <p class="am-pm"><span class="am hide">AM</span><span class="pm">PM</span></p>
+      </section>
+      <section class="weather">
+        <p class="temp-icon">☀️</p>
+        <p class="temp"><span class="low-temp">3℃</span> / <span class="high-temp">9℃</span></p>
+      </section>
+      <section class="week">
+        <p class="month__week"><span class="month__month-week">2</span>월 <span class="month-num__month-week">4</span>째 주</p>
+        <p class="total-week">9<span>주차</span></p>
+      </section>
+    </div>
+    <section id="progress_bar" class="center">
+      <progress id="progress" max="100" value="16"></progress>
+    </section>
+    <section id="calendar" class="center">
+      <table>
+        <thead>
+          <tr id="day_of_the_week">
+            <th id="th_sun"></th>
+            <th id="th_mon"></th>
+            <th id="th_tue"></th>
+            <th id="th_wed"></th>
+            <th id="th_thu"></th>
+            <th id="th_fri"></th>
+            <th id="th_sat"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="week1">
+            <td class="sun"></td>
+            <td class="mon"></td>
+            <td class="tue"></td>
+            <td class="wed"></td>
+            <td class="thu"></td>
+            <td class="fri"></td>
+            <td class="sat">1</td>
+          </tr>
+          <tr id="week2">
+            <td class="sun">2</td>
+            <td class="mon">3</td>
+            <td class="tue">4</td>
+            <td class="wed">5</td>
+            <td class="thu">6</td>
+            <td class="fri">7</td>
+            <td class="sat">8</td>
+          </tr>
+          <tr id="week3">
+            <td class="sun">9</td>
+            <td class="mon">10</td>
+            <td class="tue">11</td>
+            <td class="wed">12</td>
+            <td class="thu">13</td>
+            <td class="fri">14</td>
+            <td class="sat">15</td>
+          </tr>
+          <tr id="week4">
+            <td class="sun">16</td>
+            <td class="mon">17</td>
+            <td class="tue">18</td>
+            <td class="wed">19</td>
+            <td class="thu">20</td>
+            <td class="fri">21</td>
+            <td class="sat">22</td>
+          </tr>
+          <tr id="week5">
+            <td class="sun">23</td>
+            <td class="mon">24</td>
+            <td class="tue">25</td>
+            <td class="wed">26</td>
+            <td class="thu">27</td>
+            <td class="fri">28</td>
+            <td class="sat">29</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer class="center">
+    Made by Mino
+    <a href="https://github.com/mhjang710" target="_blank"><img src="./images/github-mark-white.png" alt="github icon" id="github_icon"></a>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>

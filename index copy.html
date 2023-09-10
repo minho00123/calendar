@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts: Noto Sans and Jua -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="style.css">
+  <title>Calendar</title>
+</head>
+<body>
+  <header>
+    <button>KO</button>
+    <button>EN</button>
+  </header>
+  <main>
+    <section id="today_info">
+      <article id="date">
+        <h1>오늘은</h1>
+        <h2>2023년 2월 16일 목요일</h2>
+        <h1 class="end">입니다.</h1>
+      </article>
+      <article id="time_info">
+        <h1>현재 시간은</h1>
+        <h2>5:00 <div id="time"><span>AM</span><span>PM</span></div></h2>
+        <h1 class="end">입니다.</h1>
+      </article>
+    </section>
+    <section id="week_and_weather">
+      <article id="this week">
+        <h1>이번 주는 <span id="week">7</span> 번째 주 입니다</h1>
+        <progress max="100" value="10">10%</progress> 10%
+      </article>
+      <article id="weather">
+        ☀️
+      </article>
+    </section>
+    <section id="calendar_table">
+      <table>
+        <tr id="day_of_the_week">
+          <th>월요일</th>
+          <th>화요일</th>
+          <th>수요일</th>
+          <th>목요일</th>
+          <th>금요일</th>
+          <th>토요일</th>
+          <th>일요일</th>
+        </tr>
+        <tr id="week1">
+          <td></td>
+          <td></td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+        <tr id="week2">
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+        </tr>
+        <tr id="week3">
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+          <td>19</td>
+        </tr>
+        <tr id="week4">
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+        </tr>
+        <tr id="week5">
+          <td>27</td>
+          <td>28</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </section>
+    <div id="sun"></div>
+    <footer>
+      Made by Mino
+    </footer>
+  </main>
+</body>
+</html>
